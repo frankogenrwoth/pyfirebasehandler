@@ -58,7 +58,7 @@ Make sure you have the necessary test credentials for your Firebase database.
 
 ## License
 
-This project is licensed under the terms of the MIT License. See the [LICENSE](https://github.com/frankogenrwoth/pyfirebasehandler/blob/aab4e1b455fb448bf0a77ff3d24dc52dfa834be7/LICENCE) file for details.
+This project is licensed under the terms of the MIT License. See the [LICENSE](LICENCE) file for details.
 ```
 MIT License
 
