@@ -62,7 +62,7 @@ This project is licensed under the terms of the MIT License. See the [LICENSE](L
 ```
 MIT License
 
-Copyright (c) 2023 OGENRWOTH JIM FRANK
+Copyright (c) 2023 pyfirebasehandler
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
