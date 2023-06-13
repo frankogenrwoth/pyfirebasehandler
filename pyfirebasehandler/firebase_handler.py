@@ -6,12 +6,11 @@ from firebase_admin import firestore
 class FirebaseHandler:
     def __init__(self, credentials_path):
         # Initialize Firebase credentials
-        try:
+        if not firebase_admin._apps:
             cred = credentials.Certificate(credentials_path)
             firebase_admin.initialize_app(cred)
-            self.db = firestore.client()
-        except:
-            print('database not created at root')
+        self.db = firestore.client()
+
 
     def create_document(self, collection_name, document_data, custom_ref=""):
         """

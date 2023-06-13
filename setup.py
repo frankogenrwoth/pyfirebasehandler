@@ -9,5 +9,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "firebase-admin",
+        "google-cloud-firestore",
     ],
 )

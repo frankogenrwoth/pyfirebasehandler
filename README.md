@@ -48,7 +48,7 @@ Replace `'path/to/credentials.json'` with the actual path to your Firebase servi
 
 ## Tests
 
-To run the tests for Your Module, execute the following command:
+To run the tests for Module, execute the following command:
 
 ```shell
 python -m unittest tests.test_firebase_handler

@@ -5,7 +5,7 @@ from pyfirebasehandler.firebase_handler import FirebaseHandler
 class FirebaseHandlerTestCase(unittest.TestCase):
     def setUp(self):
         # Initialize FirebaseHandler with test credentials
-        credentials_path = 'path/to/test_credentials.json'
+        credentials_path = 'test_db/test_db.json'
         self.handler = FirebaseHandler(credentials_path)
 
     def tearDown(self):
@@ -48,12 +48,13 @@ class FirebaseHandlerTestCase(unittest.TestCase):
         self.assertEqual(retrieved_data['age'], updated_data['age'])
 
     def test_delete_document(self):
+        db = self.handler
         collection_name = 'test_collection'
         document_data = {'name': 'John Doe', 'age': 30}
-        document_id = self.handler.create_document(collection_name, document_data)
+        document_id = db.create_document(collection_name, document_data)
 
         # Delete the document
-        self.handler.delete_document(collection_name, document_id)
+        db.delete_document(collection_name, document_id)
 
         # Try to retrieve the deleted document
         retrieved_data = self.handler.get_document(collection_name, document_id)
