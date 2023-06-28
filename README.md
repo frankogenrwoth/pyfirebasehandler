@@ -28,11 +28,18 @@ handler = FirebaseHandler('path/to/credentials.json')
 # Create a document
 data = {'name': 'John Doe', 'age': 30}
 document_id = handler.create_document('users', data)
+
+## for creating a document with a custom reference
+document_id = handler.create_document('users', data, custom_ref="id01")
 print(f"Created document with ID: {document_id}")
 
 # Retrieve a document
 document_data = handler.get_document('users', document_id)
 print(f"Retrieved document data: {document_data}")
+
+# Retrive list of documents from a collection
+collection_data = handler.read_collection('users')
+print(f"Retrieved list of collection data: {document_data}")
 
 # Update a document
 updated_data = {'age': 31}

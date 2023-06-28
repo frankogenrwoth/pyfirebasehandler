@@ -65,7 +65,7 @@ class FirebaseHandler:
         doc_ref = collection_ref.document(document_id)
         doc_ref.delete()
 
-    def readCollection(self, collection_path):
+    def read_collection(self, collection_path):
         docs = self.db.collection(collection_path).stream()
 
         collection_data_list = list()
