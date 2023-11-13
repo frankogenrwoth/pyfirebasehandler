@@ -1,4 +1,4 @@
-Certainly! Here's an example `README.md` file for your module:
+Here's an example `README.md` file for your module:
 
 ```markdown
 # pyfirebasehandler
